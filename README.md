@@ -30,6 +30,9 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 | LED verde  | 12             |
 | LED azul   | 11             |
 
+
+![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
+
 ## 🚀 Uso
 
 1. Carga el código en tu placa de Arduino.
