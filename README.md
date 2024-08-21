@@ -26,9 +26,9 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 
 | Componente | Pin de Arduino |
 |------------|----------------|
-| LED rojo   | 13             |
+| LED rojo   | 11             |
 | LED verde  | 12             |
-| LED azul   | 11             |
+| LED azul   | 13             |
 
 
 ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
