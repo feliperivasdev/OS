@@ -1,6 +1,4 @@
-# OS Labs
-
- # 1 Arduino LED Controller
+# Arduino LED Controller
 
 Este código de Arduino permite controlar el encendido y apagado de luces RGB en una vivienda a través del monitor serial.
 
@@ -53,3 +51,35 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 
 ¡Disfruta de la iluminación controlada por tu Arduino! 💡
 
+## 🖥️ Emulación en Tinkercad
+
+Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de hardware físico. Sigue estos pasos:
+
+1. **Accede a Tinkercad:**
+   - Ve a [Tinkercad](https://www.tinkercad.com) y crea una cuenta o inicia sesión.
+
+2. **Crea un nuevo proyecto:**
+   - Haz clic en "Circuits" (Circuitos) y luego en "Create new Circuit" (Crear nuevo circuito).
+
+3. **Añade los componentes:**
+   - Arrastra y coloca una placa de Arduino Uno en el área de trabajo.
+   - Añade 3 LEDs (rojo, verde y azul) y conéctalos a los pines correspondientes (13, 12 y 11).
+   - Añade resistencias de 220 Ω a cada LED.
+   - Conecta los LEDs y resistencias de acuerdo a las conexiones descritas en la sección **🔌 Conexiones**.
+
+4. **Carga el código:**
+   - Haz clic en "Code" (Código) y selecciona "Blocks + Text" (Bloques + Texto) o "Text" (Texto).
+   - Copia y pega el código proporcionado en el editor de código.
+
+5. **Simula el circuito:**
+   - Haz clic en "Start Simulation" (Iniciar simulación) para probar el funcionamiento del código y ver cómo se controlan los LEDs.
+
+## 📦 Materiales Requeridos
+
+- Arduino Uno
+- 3 LEDs (rojo, verde, azul)
+- 3 resistencias de 220 Ω
+- Cables de conexión
+- Placa de pruebas (breadboard) para una conexión más sencilla
+
+Con estos pasos podrás emular y probar el controlador de LEDs RGB en Tinkercad antes de realizar el montaje físico. ¡Diviértete experimentando con tu proyecto de Arduino! 🚀
