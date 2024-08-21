@@ -20,19 +20,25 @@ void loop()
         switch (option)
         {
         case '1':
-            turnOnRed(); // Turn on the red LED
+            turnOnRed();    // Turn on the red LED
+            turnOffGreen(); // Turn off the green LED
+            turnOffBlue();  // Turn off the blue LED
             break;
         case '2':
             turnOffRed(); // Turn off the red LED
             break;
         case '3':
             turnOnGreen(); // Turn on the green LED
+            turnOffRed();  // Turn off the Red LED
+            turnOffBlue(); // Turn off the blue LED
             break;
         case '4':
             turnOffGreen(); // Turn off the green LED
             break;
         case '5':
-            turnOnBlue(); // Turn on the blue LED
+            turnOnBlue();   // Turn on the blue LED
+            turnOffRed();   // Turn off the red LED
+            turnOffGreen(); // Turn off the green LED
             break;
         case '6':
             turnOffBlue(); // Turn off the blue LED
@@ -113,18 +119,24 @@ void blinkAll()
                 {
                 case '1':
                     turnOnRed();
+                    turnOffBlue();
+                    turnOffGreen();
                     break;
                 case '2':
                     turnOffRed();
                     break;
                 case '3':
                     turnOnGreen();
+                    turnOffRed();
+                    turnOffBlue();
                     break;
                 case '4':
                     turnOffGreen();
                     break;
                 case '5':
                     turnOnBlue();
+                    turnOffRed();
+                    turnOffGreen();
                     break;
                 case '6':
                     turnOffBlue();
