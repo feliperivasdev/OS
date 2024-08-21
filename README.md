@@ -42,7 +42,7 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 | LED verde  | 12             |
 | LED azul   | 13             |
 
--sigue este digrama esquematico para realizar las conexiones
+- sigue este digrama esquematico para realizar las conexiones
 ![image](https://github.com/user-attachments/assets/662b400b-dd2e-43fc-85b1-b8eea8799a77)
 
 ### 🚀 Uso
