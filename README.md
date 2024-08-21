@@ -1,9 +1,19 @@
 # OS Labs
-# Lab 1 Arduino LED Controller
+
+## Table of Contents
+- [Lab 1 Arduino LED Controller](#lab-1-arduino-led-controller)
+  - [🛠️ Funcionalidad](#-funcionalidad)
+  - [📋 Requisitos](#-requisitos)
+  - [🔌 Conexiones](#-conexiones)
+  - [🚀 Uso](#-uso)
+  - [🖥️ Emulación en Tinkercad](#-emulación-en-tinkercad)
+  - [📦 Materiales Requeridos](#-materiales-requeridos)
+
+## Lab 1 Arduino LED Controller
 
 Este código de Arduino permite controlar el encendido y apagado de luces RGB a través del monitor serial.
 
-## 🛠️ Funcionalidad
+### 🛠️ Funcionalidad
 
 El programa permite realizar las siguientes acciones:
 
@@ -16,7 +26,7 @@ El programa permite realizar las siguientes acciones:
 
 Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada acción se activa presionando un número del `1` al `9` en el monitor serial.
 
-## 📋 Requisitos
+### 📋 Requisitos
 
 - Placa de Arduino
 - 3 LEDs de colores (rojo, verde y azul)
@@ -24,7 +34,7 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 - Cables de conexión
 - Placa de pruebas (breadboard) para una conexión más sencilla
 
-## 🔌 Conexiones
+### 🔌 Conexiones
 
 | Componente | Pin de Arduino |
 |------------|----------------|
@@ -32,9 +42,7 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 | LED verde  | 12             |
 | LED azul   | 13             |
 
-
-
-## 🚀 Uso
+### 🚀 Uso
 
 1. Carga el código en tu placa de Arduino.
 2. Abre el monitor serial en el IDE de Arduino.
@@ -55,7 +63,7 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 
 ¡Disfruta de la iluminación controlada por tu Arduino! 💡
 
-## 🖥️ Emulación en Tinkercad
+### 🖥️ Emulación en Tinkercad
 
 Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de hardware físico. Sigue estos pasos:
 
@@ -70,8 +78,8 @@ Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de
    - Añade 3 LEDs (rojo, verde y azul) y conéctalos a los pines correspondientes (11, 12 y 13).
    - Añade resistencias de 220 Ω a cada LED.
    - Conecta los LEDs y resistencias de acuerdo a las conexiones descritas en la sección **🔌 Conexiones**.
-   - Guiate de esta imagen para las conexiones
-   - 
+   - Guíate de esta imagen para las conexiones
+
     ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
 
 4. **Carga el código:**
@@ -81,7 +89,7 @@ Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de
 5. **Simula el circuito:**
    - Haz clic en "Start Simulation" (Iniciar simulación) para probar el funcionamiento del código y ver cómo se controlan los LEDs.
 
-## 📦 Materiales Requeridos
+### 📦 Materiales Requeridos
 
 - Arduino Uno
 - 3 LEDs (rojo, verde, azul)
