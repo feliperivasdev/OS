@@ -1,4 +1,5 @@
-# Arduino LED Controller
+# OS Labs
+# Lab 1 Arduino LED Controller
 
 Este código de Arduino permite controlar el encendido y apagado de luces RGB a través del monitor serial.
 
