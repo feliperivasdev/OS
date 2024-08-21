@@ -3,6 +3,9 @@
 #define GREEN_LED 12
 #define BLUE_LED 13
 
+// Variable to control blinking state
+bool isBlinking = false;
+
 void setup()
 {
     Serial.begin(9600);         // Initialize serial communication at 9600 baud
@@ -13,46 +16,12 @@ void setup()
 
 void loop()
 {
-    // Check if there is data available from the serial input
-    if (Serial.available() > 0)
+    serialInput(); // Check for serial input and execute corresponding actions
+    
+    // Only execute blinking if the flag is set
+    if (isBlinking)
     {
-        int option = Serial.read(); // Read the input option
-        switch (option)
-        {
-        case '1':
-            turnOnRed();    // Turn on the red LED
-            turnOffGreen(); // Turn off the green LED
-            turnOffBlue();  // Turn off the blue LED
-            break;
-        case '2':
-            turnOffRed(); // Turn off the red LED
-            break;
-        case '3':
-            turnOnGreen(); // Turn on the green LED
-            turnOffRed();  // Turn off the Red LED
-            turnOffBlue(); // Turn off the blue LED
-            break;
-        case '4':
-            turnOffGreen(); // Turn off the green LED
-            break;
-        case '5':
-            turnOnBlue();   // Turn on the blue LED
-            turnOffRed();   // Turn off the red LED
-            turnOffGreen(); // Turn off the green LED
-            break;
-        case '6':
-            turnOffBlue(); // Turn off the blue LED
-            break;
-        case '7':
-            turnOnAll(); // Turn on all LEDs
-            break;
-        case '8':
-            turnOffAll(); // Turn off all LEDs
-            break;
-        case '9':
-            blinkAll(); // Start blinking all LEDs
-            break;
-        }
+        blinkAll();
     }
 }
 
@@ -105,56 +74,61 @@ void turnOffAll()
 // Function to blink all LEDs
 void blinkAll()
 {
-    while (true)
-    {
-        // Check for serial input to interrupt blinking
-        if (Serial.available() > 0)
-        {
-            int option = Serial.read();
+    turnOnAll();
+    delay(500);
+    turnOffAll();
+    delay(500);
+}
 
-            // If input is not '9', execute corresponding action and stop blinking
-            if (option != '9')
-            {
-                switch (option)
-                {
-                case '1':
-                    turnOnRed();
-                    turnOffBlue();
-                    turnOffGreen();
-                    break;
-                case '2':
-                    turnOffRed();
-                    break;
-                case '3':
-                    turnOnGreen();
-                    turnOffRed();
-                    turnOffBlue();
-                    break;
-                case '4':
-                    turnOffGreen();
-                    break;
-                case '5':
-                    turnOnBlue();
-                    turnOffRed();
-                    turnOffGreen();
-                    break;
-                case '6':
-                    turnOffBlue();
-                    break;
-                case '7':
-                    turnOnAll();
-                    break;
-                case '8':
-                    turnOffAll();
-                    break;
-                }
-                break; // Exit the blinking loop
-            }
+// Function to handle serial input
+void serialInput()
+{
+    if (Serial.available() > 0)
+    {
+        int option = Serial.read();
+
+        // Stop blinking if input is not '9'
+        if (isBlinking && option != '9')
+        {
+            isBlinking = false; // Stop blinking
         }
-        // Blink all LEDs on and off with a 500ms delay
-        turnOnAll();
-        delay(500);
-        turnOffAll();
-        delay(500);
+
+        // Execute corresponding action
+        switch (option)
+        {
+        case '1':
+            turnOnRed();
+            turnOffBlue();
+            turnOffGreen();
+            break;
+        case '2':
+            turnOffRed();
+            break;
+        case '3':
+            turnOnGreen();
+            turnOffRed();
+            turnOffBlue();
+            break;
+        case '4':
+            turnOffGreen();
+            break;
+        case '5':
+            turnOnBlue();
+            turnOffRed();
+            turnOffGreen();
+            break;
+        case '6':
+            turnOffBlue();
+            break;
+        case '7':
+            turnOnAll();
+            break;
+        case '8':
+            turnOffAll();
+            break;
+        case '9':
+            isBlinking = true; // Start blinking
+            break;
+        }
     }
 }
