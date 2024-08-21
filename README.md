@@ -1,6 +1,6 @@
 # OS Labs
 
-## Table of Contents
+## Tabla de Contenido
 - [Lab 1 Arduino LED Controller](#lab-1-arduino-led-controller)
   - [🛠️ Funcionalidad](#-funcionalidad)
   - [📋 Requisitos](#-requisitos)
