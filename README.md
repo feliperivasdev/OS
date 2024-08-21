@@ -31,7 +31,6 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 | LED azul   | 13             |
 
 
-![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
 
 ## 🚀 Uso
 
@@ -66,9 +65,11 @@ Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de
 
 3. **Añade los componentes:**
    - Arrastra y coloca una placa de Arduino Uno en el área de trabajo.
-   - Añade 3 LEDs (rojo, verde y azul) y conéctalos a los pines correspondientes (13, 12 y 11).
+   - Añade 3 LEDs (rojo, verde y azul) y conéctalos a los pines correspondientes (11, 12 y 13).
    - Añade resistencias de 220 Ω a cada LED.
    - Conecta los LEDs y resistencias de acuerdo a las conexiones descritas en la sección **🔌 Conexiones**.
+   - O guiate de esta imagen para las conexiones
+   - ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
 
 4. **Carga el código:**
    - Haz clic en "Code" (Código) y selecciona "Blocks + Text" (Bloques + Texto) o "Text" (Texto).
