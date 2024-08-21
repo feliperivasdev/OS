@@ -70,7 +70,7 @@ Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de
    - Añade resistencias de 220 Ω a cada LED.
    - Conecta los LEDs y resistencias de acuerdo a las conexiones descritas en la sección **🔌 Conexiones**.
    - Guiate de esta imagen para las conexiones
-   - ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
+    ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
 
 4. **Carga el código:**
    - Haz clic en "Code" (Código) y selecciona "Blocks + Text" (Bloques + Texto) o "Text" (Texto).
