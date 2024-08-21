@@ -21,6 +21,7 @@ Para controlar las luces, se utiliza el monitor serial del IDE de Arduino. Cada 
 - 3 LEDs de colores (rojo, verde y azul)
 - Resistencias para los LEDs (valor recomendado: 220 Ω)
 - Cables de conexión
+- Placa de pruebas (breadboard) para una conexión más sencilla
 
 ## 🔌 Conexiones
 
