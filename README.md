@@ -69,7 +69,7 @@ Puedes emular este proyecto en Tinkercad para probar el código sin necesidad de
    - Añade 3 LEDs (rojo, verde y azul) y conéctalos a los pines correspondientes (11, 12 y 13).
    - Añade resistencias de 220 Ω a cada LED.
    - Conecta los LEDs y resistencias de acuerdo a las conexiones descritas en la sección **🔌 Conexiones**.
-   - O guiate de esta imagen para las conexiones
+   - Guiate de esta imagen para las conexiones
    - ![Conexiones](https://github.com/user-attachments/assets/d575a196-3892-4015-98ac-ee232785bbfe)
 
 4. **Carga el código:**
