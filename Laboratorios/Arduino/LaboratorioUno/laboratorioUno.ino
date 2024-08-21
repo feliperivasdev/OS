@@ -17,7 +17,7 @@ void setup()
 void loop()
 {
     serialInput(); // Check for serial input and execute corresponding actions
-    
+
     // Only execute blinking if the flag is set
     if (isBlinking)
     {
