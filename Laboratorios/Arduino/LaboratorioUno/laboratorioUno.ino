@@ -8,7 +8,7 @@ bool isBlinking = false;
 
 void setup()
 {
-    Serial.begin(9600);         // Initialize serial communication at 9600 baud
+    Serial.begin(9600);         // Initialize serial communication at 9600 
     pinMode(RED_LED, OUTPUT);   // Set RED_LED pin as output
     pinMode(GREEN_LED, OUTPUT); // Set GREEN_LED pin as output
     pinMode(BLUE_LED, OUTPUT);  // Set BLUE_LED pin as output
