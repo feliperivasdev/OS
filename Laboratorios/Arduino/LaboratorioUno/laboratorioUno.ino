@@ -12,6 +12,8 @@ void setup()
     pinMode(RED_LED, OUTPUT);   // Set RED_LED pin as output
     pinMode(GREEN_LED, OUTPUT); // Set GREEN_LED pin as output
     pinMode(BLUE_LED, OUTPUT);  // Set BLUE_LED pin as output
+    
+    showMenu(); // Show menu when the program starts
 }
 
 void loop()
@@ -129,6 +131,28 @@ void serialInput()
         case '9':
             isBlinking = true; // Start blinking
             break;
+        default:
+            Serial.println("Invalid option. Please select a valid option.");
+            break;
         }
+        
+        // Show menu again after processing the input
+        showMenu();
     }
+}
+
+// Function to show the menu
+void showMenu()
+{
+    Serial.println("LED Control Menu:");
+    Serial.println("1: Turn on Red LED");
+    Serial.println("2: Turn off Red LED");
+    Serial.println("3: Turn on Green LED");
+    Serial.println("4: Turn off Green LED");
+    Serial.println("5: Turn on Blue LED");
+    Serial.println("6: Turn off Blue LED");
+    Serial.println("7: Turn on All LEDs");
+    Serial.println("8: Turn off All LEDs");
+    Serial.println("9: Start Blinking All LEDs");
+    Serial.println("Please enter your choice:");
 }
